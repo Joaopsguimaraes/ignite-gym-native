@@ -2,7 +2,6 @@ import { useNavigation } from "@react-navigation/native";
 import { AppNavigatorRoutesProps } from "@routes/app.routes";
 import {
   Box,
-  Center,
   HStack,
   Heading,
   Icon,

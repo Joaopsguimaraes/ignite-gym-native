@@ -48,19 +48,23 @@ export function AppRoutes() {
         name="home"
         component={Home}
         options={{
-          tabBarIcon: ({ focused, color, size }) => (
+          tabBarIcon: ({ color }) => (
             <HomeSvg fill={color} width={iconSize} height={iconSize} />
           ),
         }}
       />
-      <Screen name="exercise" component={Exercise} options={{
-        tabBarButton: () => null,
-      }} />
+      <Screen
+        name="exercise"
+        component={Exercise}
+        options={{
+          tabBarButton: () => null,
+        }}
+      />
       <Screen
         name="history"
         component={History}
         options={{
-          tabBarIcon: ({ focused, color, size }) => (
+          tabBarIcon: ({ color }) => (
             <HistorySvg fill={color} width={iconSize} height={iconSize} />
           ),
         }}
@@ -69,7 +73,7 @@ export function AppRoutes() {
         name="profile"
         component={Profile}
         options={{
-          tabBarIcon: ({ focused, color, size }) => (
+          tabBarIcon: ({ color }) => (
             <ProfileSvg fill={color} width={iconSize} height={iconSize} />
           ),
         }}
