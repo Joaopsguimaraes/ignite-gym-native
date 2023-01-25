@@ -34,7 +34,6 @@ export function Profile() {
         aspect: [4, 4],
         allowsEditing: true,
       });
-
       if (photoSelected.assets) {
         const photoInfo = await FileSystem.getInfoAsync(
           photoSelected.assets[0].uri
